@@ -1,0 +1,35 @@
+.squart-appnt{
+  border: 1px white solid;
+  padding: 20px;
+}
+
+.navbar{
+  border: 1px white solid;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar
+.in-appnt{
+  width: 100%;
+
+}
+
+.patient-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.patient-item{
+  display: flex;
+  flex-direction: row;
+  border: 1px white solid;
+}
+
+.patient-item--item{
+  flex: 1 1 auto;
+  text-align: center;
+}
