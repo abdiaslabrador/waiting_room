@@ -33,3 +33,23 @@
   flex: 1 1 auto;
   text-align: center;
 }
+
+.title{
+  color:white;
+  /* margin-bottom: 20px; */
+  font-size: 20px;
+}
+
+.form-row{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-row--item{
+  flex: 1 1 50%;
+}
+
+.button_group {
+  display: flex;
+  justify-content: center;
+}
