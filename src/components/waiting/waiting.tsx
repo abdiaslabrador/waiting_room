@@ -12,7 +12,7 @@ const WaitingRoom = () => {
     <>
         {wtgList.map((patient, index) => (
         <div key={index} className={ `${patientInfo["patient-item"]}` }>
-            <div className={ `${patientInfo["patient-item--item"]}` } >n</div>
+            <div className={ `${patientInfo["patient-item--item"]}` } >{patient.num}</div>
             <div className={ `${patientInfo["patient-item--item"]}` } >{patient.name}</div>
             <div className={ `${patientInfo["patient-item--item"]}` } >{patient.last_name}</div>
             <div className={ `${patientInfo["patient-item--item"]}` }>{patient.ci}</div>

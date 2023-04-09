@@ -1,4 +1,6 @@
 export const ADD_PATIENT = "ADD_PATIENT";
+export const INCREMENT = "INCREMENT";
+
 export const UPDATE_INAPPOINT = "UPDATE_INAPPOINT";
 export const LOADING_INAPPOINT = "LOADING_INAPPOINT";
 export const LOADING_FORM = "LOADING_FORM";

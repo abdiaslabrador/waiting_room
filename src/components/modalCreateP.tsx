@@ -42,8 +42,7 @@ const ModalCreateP = () => {
  }
 
  const formHandler = (values : any, resetForm : any) =>{
-  
-    addPatientFn(values);
+    addPatientFn({...values, num : 0});
     resetForm({ values: "" });
  }
 

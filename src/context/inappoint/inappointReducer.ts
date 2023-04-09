@@ -1,5 +1,6 @@
 import {
   ADD_PATIENT,
+  INCREMENT,
   // UPDATE_CURRENCY,
   // LOADING_FORM,
   // LOADING_CURRENCY,
@@ -14,6 +15,9 @@ import {
     | {
         type: "ADD_PATIENT";
         wtgList: any,
+      }
+    | {
+        type: "INCREMENT";
       }
     // | {
     //   type: "UPDATE_CURRENCY";
@@ -52,14 +56,11 @@ import {
           ...state,
           wtgList: action.wtgList,
         };
-          // case UPDATE_CURRENCY:
-          // return {
-          //   ...state,
-          //   currency: action.currency,
-          //   msjSuccess : action.msjSuccess,
-          //   msjError : action.msjError,
-          //   loadingForm : action.loadingForm,
-          // };
+          case INCREMENT:
+          return {
+            ...state,
+            num: state.num + 1,
+          };
           // case CURRENCY_ERROR:
           // return {
           //   ...state,

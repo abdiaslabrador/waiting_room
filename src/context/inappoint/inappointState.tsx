@@ -9,6 +9,7 @@ import {PatientInf} from '@/interfaces/patient';
 
 import {
     ADD_PATIENT,
+    INCREMENT,
     UPDATE_INAPPOINT,
     INAPPOINT_ERROR,
     LOADING_FORM,
@@ -29,15 +30,19 @@ const WaitingRoomProvider = ({ children }: props) => {
     msjError : "",
     loadingForm: false,
     loadingWtgList: true,
+    num : 0,
   };
 
   const [state, dispatch] = useReducer(inappointReducer, initialState);
   
+  function increment_num(){
+    dispatch({type: INCREMENT})
+  }
+
   function addPatientFn(patient : PatientInf){
-      
+      increment_num(); 
+      patient.num = state.num;
       let arrayCopy : PatientInf[] = [...state.wtgList, patient];
-      console.log(arrayCopy[arrayCopy.length].num)
-      // arrayCopy[arrayCopy.length].num =  arrayCopy.length + 1;
 
       dispatch({
         type: ADD_PATIENT,
